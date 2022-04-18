@@ -1,0 +1,94 @@
+Valid Test data for allocate project module
+{
+	"ideaOwner":10009,
+	"projectName":"Android Shopping App",
+    "releaseDate":"2019-09-27",
+	"mentorDTO":{"mentorId":1009}
+}
+
+For Validations:
+Invalid Test data 1 for allocate project module
+{
+	"ideaOwner":null,
+	"projectName":null,
+	"releaseDate":null,
+	"mentorDTO":{"mentorId":null}
+}
+
+Invalid Test data 2 for allocate project module
+{
+	"ideaOwner":10009,
+	"projectName":"Android Shopping App",
+    "releaseDate":"2019-09-27"
+}
+
+Invalid Test data 3 for allocate project module
+{
+	"ideaOwner":10009,
+	"projectName":"Android Shopping App",
+	"releaseDate":"2019-09-27",
+	"mentorDTO":{"mentorId":10090}
+}
+
+Invalid Test data 4 for allocate project module
+{
+	"ideaOwner":10009,
+	"projectName":"Android Shopping App",
+	"releaseDate":"2019-09-27",
+	"mentorDTO":{"mentorId":100}
+}
+
+For Service Exceptions:
+Invalid Test data 5 for allocate project module
+{
+	"ideaOwner":10009,
+	"projectName":"Android Shopping App",
+	"releaseDate":"2019-09-27",
+	"mentorDTO":{"mentorId":1002}
+}
+
+Invalid Test data 6 for allocate project module
+{
+	"ideaOwner":10009,
+	"projectName":"Android Shopping App",
+	"releaseDate":"2019-09-27",
+	"mentorDTO":{"mentorId":1015}
+}
+
+
+---------------------------------------------------
+
+Valid Test data for get mentor details module
+http://localhost:8765/infyinterns/mentor/1
+
+Invalid Test data for get project details module
+http://localhost:8765/infyinterns/mentor/4
+---------------------------------------------------
+
+Valid Test data for update project mentor module
+http://localhost:8765/infyinterns/project/12/1004
+
+For Validations:
+Invalid Test data 1 for update project mentor module
+http://localhost:8765/infyinterns/project/1/11031
+
+Invalid Test data 2 for update project mentor module
+http://localhost:8765/infyinterns/project/1/100
+
+For Service Exceptions:
+Invalid Test data 3 for update project mentor module
+http://localhost:8765/infyinterns/project/1/2000
+
+Invalid Test data 4 for update project mentor module
+http://localhost:8765/infyinterns/project/1/1002
+
+Invalid Test data 5 for update project mentor module
+http://localhost:8765/infyinterns/project/15/1004
+----------------------------------------------------
+
+Valid Test data for delete project module
+http://localhost:8765/infyinterns/project/5
+
+Invalid Test data for delete project module
+http://localhost:8765/infyinterns/project/17
+----------------------------------------------------
